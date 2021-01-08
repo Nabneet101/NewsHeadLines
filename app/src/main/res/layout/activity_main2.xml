@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg"
+        android:scaleType="fitXY"
+       />
+
+    <TextView
+        android:id="@+id/ScienceButton"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="258dp"
+        android:background="@color/brick"
+        android:backgroundTint="@color/brick"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Science"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@id/scienceView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/TechnologyButton"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/scienceView"
+        android:layout_width="140dp"
+        android:layout_height="146dp"
+        android:src="@drawable/science"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/ScienceButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/techView"
+        />
+
+    <TextView
+        android:id="@+id/HealthButton"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:background="@color/brick"
+        android:backgroundTint="@color/brick"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Health"
+        app:layout_constraintBottom_toTopOf="@id/healthView"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+
+        app:layout_constraintLeft_toRightOf="@id/Businessbutton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<ImageView
+    android:id="@+id/healthView"
+    android:layout_width="140dp"
+    android:layout_height="146dp"
+    android:src="@drawable/healthimg"
+
+    android:scaleType="centerCrop"
+    app:layout_constraintTop_toBottomOf="@id/HealthButton"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toRightOf="@id/BusinessView"
+    />
+
+    <TextView
+        android:id="@+id/TechnologyButton"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="258dp"
+        android:background="@color/brick"
+        android:backgroundTint="@color/brick"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Technology"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@id/techView"
+        app:layout_constraintLeft_toRightOf="@+id/ScienceButton"
+        app:layout_constraintRight_toLeftOf="@id/Generalbutton"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/techView"
+        android:src="@drawable/tech"
+        android:layout_width="130dp"
+        android:layout_height="146dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/TechnologyButton"
+        app:layout_constraintLeft_toRightOf="@id/scienceView"
+        app:layout_constraintRight_toLeftOf="@id/generalView"
+        />
+
+    <TextView
+        android:id="@+id/SportsButton"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:background="@color/brick"
+        android:backgroundTint="@color/brick"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Sports"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@id/SportsView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/Businessbutton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+
+        android:id="@+id/SportsView"
+        android:layout_width="140dp"
+        android:layout_height="146dp"
+        android:src="@drawable/sports"
+        android:scaleType="centerCrop"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/BusinessView"
+        app:layout_constraintTop_toBottomOf="@+id/SportsButton" />
+
+
+    <TextView
+        android:id="@+id/Generalbutton"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="258dp"
+        android:background="@color/brick"
+        android:backgroundTint="@color/brick"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="General"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintLeft_toRightOf="@id/TechnologyButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/generalView"
+        app:layout_editor_absoluteY="248dp" />
+    <ImageView
+        android:id="@+id/generalView"
+        android:layout_width="140dp"
+        android:layout_height="146dp"
+        android:src="@drawable/general"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@+id/Generalbutton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/techView"
+        />
+
+    <TextView
+        android:id="@+id/Businessbutton"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:background="@color/brick"
+        android:backgroundTint="@color/brick"
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:text="Business"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@id/BusinessView"
+        app:layout_constraintLeft_toRightOf="@+id/SportsButton"
+        app:layout_constraintRight_toLeftOf="@id/HealthButton"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/BusinessView"
+        android:layout_width="130dp"
+        android:layout_height="146dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toRightOf="@+id/SportsButton"
+        app:layout_constraintTop_toBottomOf="@+id/Businessbutton"
+        app:layout_constraintRight_toLeftOf="@id/healthView"
+        android:src="@drawable/busi"
+        />
+
+    <TextView
+        android:id="@+id/EntertainmentButton"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/brick"
+        android:backgroundTint="@color/brick"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Entertainment"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@id/EntertainmentView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/techView" />
+
+    <ImageView
+        android:id="@+id/EntertainmentView"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/entertainment"
+        app:layout_constraintTop_toBottomOf="@id/EntertainmentButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:layout_marginRight="108dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Select Which News You Want To See "
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EntertainmentView"
+        app:layout_constraintVertical_bias="0.862" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
